@@ -1,0 +1,11 @@
+extends layout
+
+block scripts
+	script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js')
+	script(src='/js/fdp.js')
+
+block content
+	h1 FdP: #{title}
+	p Welcome to #{title}
+
+	pre= fdpData

@@ -1,0 +1,48 @@
+{
+  "template":"radiance",
+  "extras":[
+    {"id":1002,"value":"talos1001.jpg"},
+    {"id":1002,"value":"Talos is a warrior. He is strong and agile with good leadership skills and an inspiring way with his comrades, not to mention the ladies. 
+While serving as a marine, Talos honed his combat skills, engaged in stealth operations, learned a magic trick to survive hostile climates, and became familiarwith electrotech gear."},
+    {"id":5003,"value":"Combat Focus	Electrotech	Heroic Mien	Rapid Attack	Resist Energy	Seafarer	Vitality Surge	Weapon Focus"},
+    {"id":6003,"value":"Dagger	Basic explorers pack"}
+  ],
+  "fields":[
+    {"id":1,"value":"Mat"},
+    {"id":2,"value":"Talos Brimbsbi"},
+    {"id":3,"value":"Fighter 1"},
+    {"id":10,"value":"14 (attractive)"},
+    {"id":11,"value":"19"},
+    {"id":18,"value":"Chaotic neutral"},
+    {"id":20,"value":"Corvis, The Eternal Reveler"},
+    {"id":24,"value":"40"},
+    {"id":30,"value":"11"},
+    {"id":31,"value":"18"},
+    {"id":43,"value":"Explorer"},
+    {"id":103,"value":"18	+4"},
+    {"id":104,"value":"12	+1"},
+    {"id":105,"value":"15	+2"},
+    {"id":106,"value":"10	0"},
+    {"id":107,"value":"8	-1"},
+    {"id":108,"value":"14	+2"},
+    {"id":111,"value":"+2	+2	0"},
+    {"id":112,"value":"Standard; perception -1; stealth +7"},
+    {"id":113,"value":"Common"},
+    {"id":115,"value":"Strength"},
+    {"id":117,"value":"+4	0	+4"},
+    {"id":120,"value":"8	8"},
+    {"id":122,"value":"6	6"},
+    {"id":128,"value":"16"},
+    {"id":129,"value":"12"},
+    {"id":130,"value":"12"},
+    {"id":135,"value":"30ft	30ft"},
+    {"id":138,"value":"Scalemail"},
+    {"id":140,"value":"4	4	0	0"},
+    {"id":202,"value":"Longsword"},
+    {"id":203,"value":"-	+1	-"},
+    {"id":204,"value":"d8 + 2"},
+    {"id":207,"value":"Shortbow"},
+    {"id":208,"value":"1	0	60ft"},
+    {"id":209,"value":"d6"}
+  ]
+}

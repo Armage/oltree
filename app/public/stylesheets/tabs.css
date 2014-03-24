@@ -1,0 +1,9 @@
+/**
+ * Tabs CSS
+ */
+
+div.tab-content {
+    max-height: 600px;
+    overflow: auto;
+    padding: 1em .5em;
+}

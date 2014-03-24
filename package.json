@@ -1,0 +1,14 @@
+{
+  "name": "Oltree",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "socket.io": "latest",
+    "express": "3.5.0",
+    "jade": "*"
+  },
+  "author": "Armage"
+}

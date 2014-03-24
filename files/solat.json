@@ -1,0 +1,16 @@
+{
+  "template":"radiance",
+  "extras":[
+    {"id":1002,"value":"talos1001.jpg"},
+    {"id":1002,"value":"Talos is a warrior. He is strong and agile with good leadership skills and an inspiring way with his comrades, not to mention the ladies. 
+While serving as a marine, Talos honed his combat skills, engaged in stealth operations, learned a magic trick to survive hostile climates, and became familiarwith electrotech gear."},
+    {"id":5003,"value":"Combat Focus	Electrotech	Heroic Mien	Rapid Attack	Resist Energy	Seafarer	Vitality Surge	Weapon Focus"},
+    {"id":6003,"value":"Dagger	Basic explorers pack"}
+  ],
+  "fields":[
+    {"id":1,"value":"Mat"},
+    {"id":2,"value":"Bouloum Ramabia"},
+    {"id":3,"value":"Fighter 2"},
+    {"id":10,"value":"14 (attractive)"}
+  ]
+}
