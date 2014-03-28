@@ -20,7 +20,8 @@ $(document).ready(function() {
             }
             content.html(html);
             content.attr('scrollTop', content.attr('scrollHeight'));
-        } else {
+        } 
+        else {
             console.log("There is a problem:", data);
         }
     });
