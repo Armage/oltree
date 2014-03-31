@@ -9,6 +9,9 @@ app.set('view engine', 'jade');
 // security, do not print "Express" in header
 app.disable('x-powered-by');
 
+// some parameters
+app.set('title', 'Oltree');
+
 // app.use(express.favicon());
 app.use(express.static(path.join(__dirname, 'app/public')));
 

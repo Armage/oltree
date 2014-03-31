@@ -9,5 +9,5 @@ var path = require('path');
 var fdpUtil = require('../../libs/fdp');
 
 exports.base = function(req, res) {
-	res.render('tchat', {title: 'Oltree'});
+	res.render('tchat', {title: req.app.get('title')});
 }
