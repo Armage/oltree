@@ -4,22 +4,29 @@ block css
 	link(rel='stylesheet', href='/stylesheets/tchat.css')
 
 block scripts
-	script(src='/js/tchat.js')
+	script(src='/js/lib/angular.min.js')
 	script(src='/socket.io/socket.io.js')
+	script(src='/js/tchat.js')
+	script(src='/js/services/tchatService.js')
 
 block content
 	h1 TChat
-	
-	p Ici, on discute...	
+
+	p Ici, on discute...
 	hr
 
-	div#content
+	div#tchat(ng-app="tchat" ng-controller="tchatController")
+		div#messages
+			p(ng-repeat="message in messages")
 
-	div.controls
-		div.input-group
-			input#name.form-control(placeholder="Name")
-		br
-		div.input-group
-			input#field.form-control(placeholder="Message")
-			span.input-group-btn
-				button#send.btn.btn-default(type='button') Go
+		div#controls
+			form(ng-submit="sendPseudo()")
+				div.input-group
+					input#name.form-control(placeholder="Pseudo", ng-model="pseudo")
+					span.input-group-btn
+						button.btn.btn-default(type='button') Go
+			form(ng-submit="sendMessage()")
+				div.input-group
+					input#field.form-control(placeholder="Message", ng-model="message")
+					span.input-group-btn
+						button.btn.btn-default(type='button') Go

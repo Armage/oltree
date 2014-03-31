@@ -10,10 +10,11 @@ app.set('view engine', 'jade');
 app.disable('x-powered-by');
 
 // some parameters
-app.set('title', 'Oltree');
+app.set('title', 'Oltréé');
 
 // app.use(express.favicon());
 app.use(express.static(path.join(__dirname, 'app/public')));
+
 
 require('./app/routes/route.js')(app);
 
@@ -22,4 +23,6 @@ var server = app.listen(app.get('port'), function() {
 });
 
 var tchatServer = require('./app/tchat/tchat');
-tchatServer.start(server);
+var io = require('socket.io').listen(server);
+io.sockets.on('connection', tchatServer);
+//tchatServer.start(server);
