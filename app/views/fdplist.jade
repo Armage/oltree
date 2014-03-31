@@ -10,8 +10,8 @@ block scripts
 block content
 	div
 		h1 Liste des feuilles de perso
-	
-	div.container-fluid(ng-controller="fdpCtrl")
+
+	div.container-fluid(ng-app="fdp" ng-controller="fdpCtrl")
 
 		div.row
 			div#fdpList.col-md-1
@@ -21,7 +21,7 @@ block content
 
 			div#fdp.tabContainer.col-md-11
 				ul.nav.nav-tabs
-					li.disabled 
+					li.disabled
 						a(href="#" onclick="return false") {{getTplName()}}
 					li(ng-repeat="page in pc.pages", ng-class="{active: $index == 0}")
 						a(href="#tab{{$index + 1}}" data-toggle="tab") {{page.title}}
@@ -34,10 +34,9 @@ block content
 								p.value {{page.notes}}
 
 							li(ng-repeat='field in page.fields', ng-class="{'list-group-item-warning': field.type == 's'}", class="list-group-item")
-								p.label {{field.name}} 
+								p.label {{field.name}}
 								p.value(ng-if="field.type != 's'") {{field.value}}
 
 
 							li.list-group-item(ng-if="page.items.length != 0", ng-repeat="item in page.items")
 								p.value {{item}}
-						
